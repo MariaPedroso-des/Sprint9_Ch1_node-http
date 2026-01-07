@@ -1,7 +1,7 @@
 //Siempre será node ./el inicio. Se puede llamar también index.js
 
-import http from 'node:http'
-import { obj } from './data.js'
+const http = require('node:http')
+const { obj } = require ('./data.js')
 
 const PORT = 3000
 
@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
       <title>${obj.title}</title>  
     </head>
     <body>
-      <h1>${obj.title}tu</h1>
+      <h1>${obj.title}</h1>
       <h2>${obj.subtitle}</h2>
       <p>${obj.description}</p>
     </body>

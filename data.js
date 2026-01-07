@@ -6,4 +6,4 @@ const obj = {
   description: 'Esta página se genera dinámicamente desde un servidor Node.js usando datos de un módulo externo.'
 }
 
-export { obj }
+module.exports = { obj }
